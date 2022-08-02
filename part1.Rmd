@@ -49,3 +49,7 @@ Github = a way to use Git and collaborate
 
 usethis::get_git()
 usethis::get_github()
+
+Staging = ready to ship to local git repo at one time
+Click Commit to push changes to git repo locally
+Use the green up arrow on the Git tab to push changes to Github
