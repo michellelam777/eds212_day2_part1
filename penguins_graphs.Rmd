@@ -1,0 +1,12 @@
+---
+title: "Penguins"
+author: "Michelle Lam"
+date: "2022-08-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
