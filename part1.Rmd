@@ -1,0 +1,48 @@
+---
+title: "EDS 212 Day 2 Part 1 - Derivatives & Git Intro"
+author: "Michelle Lam"
+date: "2022-08-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Derivatives in R
+Latex = pronounced "la tech", use single or double $ to have it knit as an equation
+
+Find the derivative of $$f(x) = 5x^2$$
+
+```{r}
+ex_1 <- expression(5 * x ^ 2)
+
+# whenever you have an undefined variable, use expression function (r doesn't need to know variable to store as value)
+
+my_derivative <- deriv(ex_1, "x")
+my_derivative
+
+# I want to find slope at x = 2.8
+
+x <- 2.8
+eval(my_derivative)
+```
+
+
+Find the slope of $g(z) = 2z^3-10.5z^2+4.1$
+
+```{r}
+gz <- expression(2 * z ^ 3 - 10.5 * z ^ 2 + 4.1)
+
+dg_dz <- D(gz, 'z')
+dg_dz
+
+# Let's evaluate the slope over a range of values
+z <- seq(from = -3, to = 4, by = 0.5)
+
+# Evaluate it!
+eval(dg_dz)
+```
+
+Git = software for version control
+Github = a way to use Git and collaborate 
