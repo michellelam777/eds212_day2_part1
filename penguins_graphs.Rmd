@@ -15,7 +15,11 @@ Scatterplot of body mass versus flipper length:
 aes function for mapping variables to graph aesthetics, not referring to variable add outside of aes
 ```{r}
 ggplot(data = penguins, aes(x = body_mass_g, y = flipper_length_mm)) +
-  geom_point(aes(color = species), size = 4)
+  geom_point(aes(color = species), size = 1) +
+  facet_wrap(~island) +
+  theme_minimal() + 
+  labs(x = "Body Mass (g)",
+       y = "Flipper Length (mm)")
 ```
 
 
