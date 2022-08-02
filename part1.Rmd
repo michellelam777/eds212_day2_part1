@@ -53,3 +53,8 @@ usethis::get_github()
 Staging = ready to ship to local git repo at one time
 Click Commit to push changes to git repo locally
 Use the green up arrow on the Git tab to push changes to Github
+
+To change master branch name to main use the following command in the console:
+usethis::git_default_branch_rename()
+
+Each project is tied to one repo in git/github
