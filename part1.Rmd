@@ -46,3 +46,6 @@ eval(dg_dz)
 
 Git = software for version control
 Github = a way to use Git and collaborate 
+
+usethis::get_git()
+usethis::get_github()
